@@ -1,7 +1,5 @@
 package com.simonlague.randomrickandmorty.domain
 
-import java.util.*
-
 data class Character(
     val id: Int,
     val name: String,
@@ -12,9 +10,9 @@ data class Character(
     val origin: Origin,
     val location: Location,
     val image: String,
-    val episodes: Array<String>,
+    val episode: Array<String>,
     val url: String,
-    val date: String
+    val created: String
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -31,9 +29,9 @@ data class Character(
         if (origin != other.origin) return false
         if (location != other.location) return false
         if (image != other.image) return false
-        if (!episodes.contentEquals(other.episodes)) return false
+        if (!episode.contentEquals(other.episode)) return false
         if (url != other.url) return false
-        if (date != other.date) return false
+        if (created != other.created) return false
 
         return true
     }
@@ -48,9 +46,9 @@ data class Character(
         result = 31 * result + origin.hashCode()
         result = 31 * result + location.hashCode()
         result = 31 * result + image.hashCode()
-        result = 31 * result + episodes.contentHashCode()
+        result = 31 * result + episode.contentHashCode()
         result = 31 * result + url.hashCode()
-        result = 31 * result + date.hashCode()
+        result = 31 * result + created.hashCode()
         return result
     }
 }
