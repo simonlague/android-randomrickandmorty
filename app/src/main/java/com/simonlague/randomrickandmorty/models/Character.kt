@@ -1,4 +1,4 @@
-package com.simonlague.randomrickandmorty.domain
+package com.simonlague.randomrickandmorty.models
 
 data class Character(
     val id: Int,
