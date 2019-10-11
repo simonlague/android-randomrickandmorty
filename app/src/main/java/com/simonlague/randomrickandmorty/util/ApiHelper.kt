@@ -1,5 +1,5 @@
 package com.simonlague.randomrickandmorty.util
 
-fun getRandomCharacterIdToString(): String{
-    return (0..493).random().toString()
+fun getRandomCharacterId(): Int {
+    return (0..493).random()
 }

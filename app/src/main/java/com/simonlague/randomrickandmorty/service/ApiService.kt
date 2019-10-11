@@ -8,7 +8,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.simonlague.randomrickandmorty.models.Character
-import com.simonlague.randomrickandmorty.util.getRandomCharacterIdToString
+import com.simonlague.randomrickandmorty.util.getRandomCharacterId
 
 object ApiService {
 
@@ -20,7 +20,7 @@ object ApiService {
         val path = "character/"
         var character: Character? = null
         val stringRequest = JsonObjectRequest(
-            Request.Method.GET, url + path + getRandomCharacterIdToString(), null,
+            Request.Method.GET, url + path + getRandomCharacterId().toString(), null,
             Response.Listener { response ->
                 character = Gson().fromJson(response.toString(), Character::class.java)
             },
