@@ -1,4 +1,4 @@
-package com.simonlague.randomrickandmorty.ui.home
+package com.simonlague.randomrickandmorty.ui.character
 
 import android.os.Bundle
 import android.view.LayoutInflater

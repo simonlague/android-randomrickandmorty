@@ -1,4 +1,4 @@
-package com.simonlague.randomrickandmorty.ui.home
+package com.simonlague.randomrickandmorty.ui.character
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
