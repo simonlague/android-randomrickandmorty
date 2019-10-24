@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/character_image_ContentDescription"
-        app:layout_constraintBottom_toBottomOf="@id/character_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_characterName"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
