@@ -1,6 +1,7 @@
 package com.simonlague.randomrickandmorty.network
 
 import android.util.Log
+import com.simonlague.randomrickandmorty.mocks.CharacterMock
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -33,5 +34,9 @@ object CharacterRepository {
                 }
             }
         )
+    }
+
+    fun getMockCharacter() {
+        // TODO
     }
 }

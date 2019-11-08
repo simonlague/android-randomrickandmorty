@@ -1,14 +1,12 @@
 package com.simonlague.randomrickandmorty.ui.character
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.simonlague.randomrickandmorty.models.Character
 
 class CharacterViewModel : ViewModel() {
 
-    private val mCharacterName = MutableLiveData<String>()
-    private val mImageUrl = MutableLiveData<String>()
-
-    val characterName: LiveData<String> = mCharacterName
-    val imageUrl: LiveData<String> = mImageUrl
+    val mCharacter: MutableLiveData<Character> by lazy {
+        MutableLiveData<Character>()
+    }
 }
