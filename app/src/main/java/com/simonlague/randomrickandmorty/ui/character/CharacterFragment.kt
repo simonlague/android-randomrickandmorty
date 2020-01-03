@@ -53,8 +53,7 @@ class CharacterFragment : Fragment() {
 
     private fun setChangePostButtonClick() {
         (activity as MainActivity).changeCharacterButton.setOnClickListener {
-//            character = CharacterRepository.getMockCharacter()
-            characterViewModel.mCharacter.setValue(character)
+            character = CharacterRepository.getMockCharacter()
         }
     }
 

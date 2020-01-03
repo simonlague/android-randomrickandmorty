@@ -36,7 +36,7 @@ object CharacterRepository {
         )
     }
 
-    fun getMockCharacter() {
-        // TODO
+    fun getMockCharacter(): Character {
+        return CharacterMock.getCharacter()
     }
 }

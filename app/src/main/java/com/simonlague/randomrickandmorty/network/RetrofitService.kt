@@ -15,5 +15,4 @@ object RetrofitService {
     fun <S> createService(serviceClass: Class<S>): S {
         return retrofit.create(serviceClass)
     }
-
 }
